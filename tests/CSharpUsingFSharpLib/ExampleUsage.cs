@@ -69,7 +69,7 @@ namespace CSharpUsingFSharpLib
 
 			var mappedList = RecursiveList.map(fsharpFunc, listWithAddedData);
 
-			var expectedList = RecursiveList<string>.NewHead("TEST2 Test", RecursiveList<string>.Empty);
+			var expectedList = RecursiveList<string>.NewHead("TEST2Test", RecursiveList<string>.Empty);
 
 			Assert.AreEqual(expectedList, mappedList);
 		}
@@ -82,11 +82,11 @@ namespace CSharpUsingFSharpLib
 			var list = RecursiveList.EmptyList<string>();
 			var listWithAddedData = RecursiveList.cons("Test", list);
 
-			Func<string, string> mapFunction = s => "TEST2" + s;
+			Func<string, string> mapFunction = s => "TEST3" + s;
 
 			var mappedList = listWithAddedData.Select(mapFunction);
 
-			var expectedList = RecursiveList<string>.NewHead("TEST2 Test", RecursiveList<string>.Empty);
+			var expectedList = RecursiveList<string>.NewHead("TEST3Test", RecursiveList<string>.Empty);
 
 			Assert.AreEqual(expectedList, mappedList);
 		}

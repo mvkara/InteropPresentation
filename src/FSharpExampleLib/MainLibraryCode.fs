@@ -12,6 +12,7 @@ type public RecursiveList<'t> =
         match x with
         | Head(i, t) -> headHandler.Invoke(i, t)
         | Empty -> emptyHandler.Invoke()
+    override x.ToString() = sprintf "%A" x
 
 // Lets follow the F# convention and define some higher order functions in an accompanying module
 module public RecursiveList =
