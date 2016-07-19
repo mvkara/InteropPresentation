@@ -1,10 +1,14 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpExampleLib", "src\FSharpExampleLib\FSharpExampleLib.fsproj", "{AC7E39AC-D20D-40B6-988E-EA789BFFFBAE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpUsingFSharpLib", "tests\CSharpUsingFSharpLib\CSharpUsingFSharpLib.csproj", "{EA60F7CC-A554-45D2-9BD5-19E1D34B3DD0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpExampleLib", "src\CSharpExampleLib\CSharpExampleLib.csproj", "{0572A1CF-BCAE-43F3-BD93-749A2C15B2AB}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharpUsingCSharpLib", "tests\FSharpUsingCSharpLib\FSharpUsingCSharpLib.fsproj", "{1EEB8ECC-B9A7-4AEB-91AC-D912872CE21E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +24,14 @@ Global
 		{EA60F7CC-A554-45D2-9BD5-19E1D34B3DD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA60F7CC-A554-45D2-9BD5-19E1D34B3DD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA60F7CC-A554-45D2-9BD5-19E1D34B3DD0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0572A1CF-BCAE-43F3-BD93-749A2C15B2AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0572A1CF-BCAE-43F3-BD93-749A2C15B2AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0572A1CF-BCAE-43F3-BD93-749A2C15B2AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0572A1CF-BCAE-43F3-BD93-749A2C15B2AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EEB8ECC-B9A7-4AEB-91AC-D912872CE21E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EEB8ECC-B9A7-4AEB-91AC-D912872CE21E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EEB8ECC-B9A7-4AEB-91AC-D912872CE21E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EEB8ECC-B9A7-4AEB-91AC-D912872CE21E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
