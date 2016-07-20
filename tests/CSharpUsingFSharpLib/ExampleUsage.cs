@@ -21,6 +21,18 @@ namespace CSharpUsingFSharpLib
 			Assert.AreEqual(2.0, record.Field3);
 		}
 
+		[Test]
+		public void TestMutableRecordWorksAsExpected()
+		{
+			var record = new SerialisableRecord();
+            record.Field1 = "TEST";
+            record.Field2 = 1;
+            record.Field3 = 2.0;
+			Assert.AreEqual("TEST", record.Field1);
+			Assert.AreEqual(1, record.Field2);
+			Assert.AreEqual(2.0, record.Field3);
+		}
+
 		public static ExampleUnion BuildExampleFSharpUnion()
 		{
             var oneCase = ExampleUnion.One;
@@ -34,9 +46,9 @@ namespace CSharpUsingFSharpLib
         [Test]
         public void TestExampleUnionUsage()
         {
-            var unionValue = BuildExampleFSharpUnion();
+            ExampleUnion unionValue = BuildExampleFSharpUnion();
 
-            var result = 
+            string result = 
                 unionValue.Match(
                     () => "TEST1",
                     s => "TEST2 " + s,

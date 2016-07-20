@@ -9,7 +9,6 @@
     <OutputType>Library</OutputType>
     <RootNamespace>FSharpUsingCSharpLib</RootNamespace>
     <AssemblyName>FSharpUsingCSharpLib</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.4.0.0</TargetFSharpCoreVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Name>FSharpUsingCSharpLib</Name>

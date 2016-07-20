@@ -2,6 +2,7 @@
 
 open System
 open CSharpExampleLib
+open NUnit.Framework
 
 module OverloadingUsage = 
     let webserviceOverloads = WebserviceUsingOverloads()
@@ -21,11 +22,12 @@ module OverloadingUsage =
         //webserviceOverloads.Get((Func<_, _> indexFilter))
         ]
 
-
     let workWithNiceService index name stringFilter indexFilter =
         [
         niceWebservice.GetByIndex(index);
         niceWebservice.GetByName(name);
+        // Using a Func<_, _> constructor here signifies that callers of this method 
+        // passing filters that we are happy from now on using F# funcs
         niceWebservice.GetByStringFilter((Func<_, _> stringFilter))
         niceWebservice.GetByIndexFilter((Func<_, _> indexFilter))
         ]

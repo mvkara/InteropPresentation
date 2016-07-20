@@ -10,6 +10,13 @@ type public ExampleDomainRecord = {
     Field3: float
     }
 
+[<CLIMutable>]
+type public SerialisableRecord = {
+    Field1: string
+    Field2: int
+    Field3: float
+    }
+
 type public ExampleUnion = 
     | One
     | Two of string
